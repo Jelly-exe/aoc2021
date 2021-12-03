@@ -4,11 +4,8 @@ contents = file.read().split('\n')
 
 def function(values, index, type):
     newValues = []
+    mostCommonValues = {"0": 0, "1": 0}
 
-    mostCommonValues = {
-        "0": 0,
-        "1": 0
-    }
     for j in range(0, len(values)):
         mostCommonValues[values[j][index]] += 1
 

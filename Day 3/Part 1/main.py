@@ -5,10 +5,8 @@ gammaRate = ""
 epsilonRate = ""
 
 for i in range(0, len(contents[0])):
-    mostCommon = {
-        "0": 0,
-        "1": 0
-    }
+    mostCommon = {"0": 0, "1": 0}
+
     for j in range(0, len(contents)):
         mostCommon[contents[j][i]] += 1
 
